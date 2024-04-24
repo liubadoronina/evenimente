@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evenimente și Festivaluri în Moldova</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Evenimente și Festivaluri în Moldova</h1>
+    </header>
+    <main>
+        <div class="eveniment">
+            <img src="imagini/eveniment1.jpg" alt="Chisinau">
+            <h2>ZIUA NAȚIONALĂ A MUZEELOR</h2>
+            <p> ziua internațioanală a muzeelor  </p>
+            <button onclick="afiseazaDetalii('eveniment1')">Detalii</button>
+        </div>
+        <div class="eveniment">
+            <img src="imagini/eveniment2.jpg" alt="Balti">
+            <h2>Eveniment 2</h2>
+            <p>Descriere eveniment 2...</p>
+            <button onclick="afiseazaDetalii('eveniment2')">Detalii</button>
+        </div>
+        
+    </main>
+    <div id="detaliiEveniment" class="detalii-eveniment ascuns">
+        <button onclick="ascundeDetalii()">Închide</button>
+        <h2 id="titluDetalii"></h2>
+        <p id="descriereDetalii"></p>
+        <!-- Poți adăuga mai multe informații despre eveniment aici -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
